@@ -19,7 +19,7 @@ This repository was built as part of the **Final Assignment for the Advances in 
 ## 📁 Files
 
 - `netflix_user_similarity.ipynb` – Complete Jupyter notebook with data loading, MinHash, LSH, candidate pair generation, and final similarity verification
-- `final_report_lsh_netflix.pdf` – 5-page report describing methodology, design decisions, results, and analysis
+- `report_lsh_JC_netflix.pdf` – 5-page report describing methodology, design decisions, results, and analysis
 - `README.md` – This documentation file
 
 ---
