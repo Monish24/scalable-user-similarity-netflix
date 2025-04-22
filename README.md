@@ -10,7 +10,8 @@ This implementation adheres to the following constraints:
 - Maximum memory usage: **8 GB RAM**
 - Maximum runtime: **30 minutes**
 - Solution must be reproducible using a **random seed passed as a command-line argument**
-
+- We were able to keep the RAM below 5GB and time as average 6mins which is significantly less than the maximum runtime
+  
 This repository was built as part of the **Final Assignment for the Advances in Data Mining** course and completed within the assigned deadline of one week.
 
 ---
