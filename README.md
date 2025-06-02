@@ -2,7 +2,7 @@
 
 This project implements a scalable and memory-efficient pipeline to identify pairs of Netflix users with similar movie preferences using **Locality-Sensitive Hashing (LSH)** and **MinHash signatures**. The objective is to find user pairs whose **Jaccard Similarity** is greater than 0.5, based solely on the sets of movies they have rated (actual rating values are ignored).
 
-## 🎯 Goal
+## Goal
 
 Due to the large size of the dataset — 100,000 users, 17,770 movies, and over 65 million user-movie rating records — brute-force computation of ~5 billion user pairs is infeasible. Therefore, this project uses LSH with MinHashing to efficiently reduce the number of comparisons while preserving the quality of similar pair detection.
 
@@ -16,7 +16,7 @@ This repository was built as part of the **Final Assignment for the Advances in 
 
 ---
 
-## 📁 Files
+## Files
 
 - `netflix_user_similarity.ipynb` – Complete Jupyter notebook with data loading, MinHash, LSH, candidate pair generation, and final similarity verification
 - `report_lsh_JC_netflix.pdf` – 5-page report describing methodology, design decisions, results, and analysis
@@ -24,23 +24,23 @@ This repository was built as part of the **Final Assignment for the Advances in 
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 The dataset is a cleaned version of the **Netflix Prize Challenge** dataset, containing users who rated at least 300 and at most 3000 movies.
 
 You can download the `.npy` data file (used for this implementation) from the following link:
 
-📥 **[Download user_movie_rating.npy (Google Drive)](https://drive.google.com/file/d/1Fqcyu9g6DZyYK_1qmjEgD1LlGD7Wfs5G/view?usp=sharing)**
+**[Download user_movie_rating.npy (Google Drive)](https://drive.google.com/file/d/1Fqcyu9g6DZyYK_1qmjEgD1LlGD7Wfs5G/view?usp=sharing)**
 
 Each row contains:
 [user_id, movie_id, rating]
 
 
-> ⚠️ The actual rating value is ignored — only the fact that a user rated a movie is used.
+> ⚠The actual rating value is ignored — only the fact that a user rated a movie is used.
 
 ---
 
-## ⚙️ Implementation Highlights
+## Implementation Highlights
 
 - **CSR Matrix** (`scipy.sparse`) used to store user-movie interactions compactly
 - **NumPy** arrays for storing movie indices per user
@@ -53,7 +53,7 @@ Each row contains:
 
 ---
 
-## ⏱️ Runtime & Performance
+## Runtime & Performance
 
 | Metric                    | Value                        |
 |--------------------------|------------------------------|
@@ -67,7 +67,7 @@ Performance remained consistent across multiple random seeds.
 
 ---
 
-## 🧠 How to Run
+## How to Run
 
 # If converting to Python script:
 python netflix_user_similarity.py --seed 1234
